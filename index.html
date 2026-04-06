@@ -17,6 +17,39 @@
 		.blockRedLine3103 {
 			display: none !important;
 		}
+        /* Estilos adicionados para o Rodapé E-E-A-T */
+        .eeat-footer {
+            background-color: #2b2b2b;
+            color: #e0e0e0;
+            padding: 40px 20px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .eeat-footer a {
+            color: #ef5350;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 400;
+        }
+        .eeat-footer a:hover {
+            text-decoration: underline;
+            color: #ff7961;
+        }
+        .eeat-disclaimer {
+            font-size: 12px;
+            color: #9e9e9e;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .eeat-nav {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
 	</style>
 
 <script type="text/javascript" src="script_land.js" defer></script>
@@ -173,8 +206,7 @@
 
 	<meta name="google-site-verification" content="OZ9y92gjrVGx7BCZrwjEiJqnUBSMea5Pd7iJuMbMOGk" />
 
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17644103603"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17644103603"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -684,8 +716,28 @@
 		</section>
 	</main>
 
+    <footer class="eeat-footer" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" style="display: none;">Información Legal y Contacto</h2>
+        <div class="container">
+            <p><strong>Cardiox Oficial Perú</strong></p>
+            
+            <p class="eeat-disclaimer">
+                <strong>Descargo de responsabilidad médico:</strong> La información contenida en este sitio web tiene fines meramente informativos y no sustituye en ningún caso el consejo, diagnóstico o tratamiento médico profesional. Cardiox es un suplemento de origen natural y sus resultados pueden variar según el metabolismo y los hábitos de cada individuo. Si está embarazada, amamantando, tomando medicamentos recetados o tiene una condición médica preexistente, consulte a su médico antes de usar cualquier suplemento.
+            </p>
 
-	<script src="js/jquery.js"></script>
+            <nav aria-label="Enlaces legales y de ayuda" class="eeat-nav">
+                <a href="politica-de-privacidad.html">Política de Privacidad</a> |
+                <a href="terminos-y-condiciones.html">Términos y Condiciones</a> |
+                <a href="pago-contra-entrega.html">Pago Contra Entrega (COD)</a> |
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <p style="font-size: 13px; color: #757575;">
+                &copy; <script>document.write(new Date().getFullYear())</script> Cardiox Perú. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
 	<script src="js/terradrew.js"></script>
 	<script src="/tl-validator.js?country=pe&label=false"></script>
 
